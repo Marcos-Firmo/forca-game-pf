@@ -1,1 +1,76 @@
+@import url('https://fonts.cdnfonts.com/css/amiga-forever'); /* importando a fonte personalizada "amiga-forever" */
+
+/* criando do corpo da página */
+body {
+    background-image: url("../imagens/plano-de-fundo.avif");/* define a imagem de fundo */
+    background-size: cover;
+    background-color: #3070ac;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Amiga Forever', sans-serif;
+}
+
+/* criando o corpo da área principal */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+/* definindo um espaçamento para o logo */
+.game-logo {
+    margin-top: 2%;
+}
+/* adcionando as funcionabilidades do menu principal */
+.menu {
+    display: flex;
+    margin-top: -14%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* definindo os padrões para os containers */
+.home-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-width: 700px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Amiga Forever', sans-serif;
+}
+/* definindo os padrões para o titulo principal e os estilos também  */
+h1 {
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: -5%;
+    margin-left: 12%;
+    font-family: 'Amiga Forever', sans-serif;
+}
+/* arrumando os tamanhos dos paragrafos de texto */
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+/* definindo as especificações dos botões */
+button {
+    background-color: #00e1ff;
+    margin-top: 10%;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Amiga Forever', sans-serif;
+}
 
