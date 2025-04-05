@@ -167,3 +167,55 @@ transform: translateX(0px);
     margin-top: 0%;
 }
 
+/*Cria uma janela de tutorial estilizada que fica inicialmente 
+oculta à direita e aparece com animação suave de 1s quando ativada.*/
+.tutorial {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    background-image: linear-gradient(rgb(8, 77, 96), rgb(11, 171, 192));
+    border: 6px solid #ffffff;
+    border-radius: 10px;
+    transform: translateX(1000px);
+    transition: 1s ease;
+    list-style: circle;
+    color: white;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1;
+
+}
+
+/*Adiciona um espaçamento de 10px abaixo de cada item da lista no tutorial para melhor organização visual.*/
+.tutorial li {
+    margin-bottom: 10px;
+}
+
+/*Ajusta o segundo div do tutorial com 40px de padding lateral e remove a margem superior.*/
+.tutorial div:nth-of-type(2) {
+    padding-inline: 40px;
+    margin-top: 0%;
+}
+
+/*Cria uma caixa rolável com fundo escuro, texto pequeno e espaçamento interno para conteúdo extenso no tutorial.*/
+.tutorial div:nth-of-type(2) div {
+    font-size: 12px;
+    padding: 25px;
+    background-color: rgb(15, 56, 68);
+    max-height: 300px;
+    overflow: auto;
+}
+
+/*Ajusta listas no tutorial com margens (10px topo, 40px base).*/
+.tutorial ul {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: rgb(22, 172, 236);
+}
+
+/*Define textos explicativos no tutorial.*/
+.tutorial .texto-sobre {
+    color: rgb(65, 174, 196);
+    margin-top: 10px;
+}
+
