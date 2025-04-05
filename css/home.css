@@ -91,3 +91,62 @@ button {
     visibility: visible;
 }
 
+/*Define uma janela de créditos estilizada que fica inicialmente oculta 
+à direita (fora da tela) e aparece com animação suave de 1s quando ativada.*/
+.creditos {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    background-image: linear-gradient(rgb(8, 77, 96), rgb(11, 171, 192));
+    border: 6px solid #ffffff;
+    border-radius: 10px;
+    transform: translateX(1000px);
+    transition: 1s ease;
+    list-style: circle;
+    color: white;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1;
+
+}
+
+/*Define um espaçamento de 10px abaixo de cada item (<li>) dentro da seção de créditos.*/
+.creditos li {
+    margin-bottom: 10px;
+}
+
+/*Aplica um espaçamento interno horizontal de 40px e remove margem superior no segundo <div> dentro da seção de créditos.*/
+.creditos div:nth-of-type(2) {
+    padding-inline: 40px;
+    margin-top: 0%;
+}
+
+/*Cria uma caixa de texto rolável com fundo escuro, fonte pequena e espaçamento interno para exibir conteúdo extenso nos créditos.*/
+.creditos div:nth-of-type(2) div {
+    font-size: 12px;
+    padding: 25px;
+    background-color: rgb(15, 56, 68);
+    max-height: 300px;
+    overflow: auto;
+}
+
+/*Ajusta listas (<ul>) nos créditos.*/
+.creditos ul {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: rgb(22, 172, 236);
+}
+
+/*Estiliza textos de descrição (.texto-sobre) nos créditos.*/
+.creditos .texto-sobre {
+    color: rgb(65, 174, 196);
+    margin-top: 10px;
+}
+
+/*Faz a janela de créditos aparecer, centralizar na tela e ficar clicável com animação suave.*/
+.creditos-ativado {
+pointer-events: auto !important;
+opacity: 1;
+transform: translateX(0px);
+}
+
