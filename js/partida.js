@@ -11,9 +11,7 @@ let tentativas = 6;
 let letrasCorretas = Array(palavraSecreta.length).fill("_");
 
 const mostrarPalavra = () =>{
-
     const container = document.getElementById("palavra-container");
-
     container.innerHTML = "";
     letrasCorretas.forEach(letra => {
         const span = document.createElement("span");
@@ -23,7 +21,6 @@ const mostrarPalavra = () =>{
     });
 }
 
-// Cria o teclado virtual
 const criarTeclado = () => {
     const tecladoLayout = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
     const teclado = document.getElementById("teclado");
