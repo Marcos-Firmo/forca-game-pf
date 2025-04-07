@@ -21,3 +21,15 @@ const botaoCreditos = () => {
         creditos.classList.remove("creditos-ativado");
     }
 }
+//função para que se o tutorial estiver invisível, mostra ele com fundo escuro e se já estiver visível, esconde tudo.
+const botaoTutorial = () => {
+    const fundo = document.querySelector(".fundo-preto")
+    const tutorial = document.querySelector(".tutorial")
+    if(!fundo.classList.contains("ativado")){
+        fundo.classList.add("ativado")
+        tutorial.classList.add("tutorial-ativado")
+    } else {
+        fundo.classList.remove("ativado")
+        tutorial.classList.remove("tutorial-ativado")
+    }
+}
